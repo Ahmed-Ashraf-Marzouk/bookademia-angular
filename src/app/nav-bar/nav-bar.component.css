@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
 
 .nav-bar {
     background-color:#008891;
@@ -31,12 +31,15 @@
 
 .cat-angle{
     display: flex;
+    width: 169px;
+    padding-right: 50px;
 }
+
 .angle{
     /* transform:rotate(90deg); */
-    transform: scale(0.6);
+    transform: scale(1.2);
     position: absolute;
-    left: 127px;
+    left: 139px;
     top: 0px;
     display: block;
 }
