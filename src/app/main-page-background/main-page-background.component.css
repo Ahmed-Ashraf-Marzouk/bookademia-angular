@@ -1,0 +1,48 @@
+
+.main-page-background{
+    padding:0;
+    margin:0;
+    float: left;
+    position: absolute;
+    top: -40%;
+    left: -20%;    
+    transform: scale(0.6);
+    z-index: 2;
+
+}
+
+.main-page-background-clouds{
+
+    padding:0;
+    margin:0;
+    float: left;
+    position: absolute;
+    top: -30%;
+    left: -10%;    
+    transform: scale(0.6);
+    transition: left 6s ease-in-out;
+    z-index: 1;
+
+}
+
+
+.title{
+
+    padding:0;
+    margin:0;
+    float: left;
+    position: absolute;
+    font-size: 250px;
+    /* top: -30%; */
+    left: 30%;    
+    transform: scale(0.6);
+    transition: left 6s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    z-index: 1;
+
+}
+
+.main-page-background:hover + .main-page-background-clouds {
+    left: -20%;  
+}

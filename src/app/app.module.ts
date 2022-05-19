@@ -13,6 +13,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainPageBackgroundComponent } from './main-page-background/main-page-background.component';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { FooterComponent } from './footer/footer.component';
     NavBarComponent,
     HeaderComponent,
     FooterComponent,
-
+    MainPageBackgroundComponent,
 
   ],
   imports: [
