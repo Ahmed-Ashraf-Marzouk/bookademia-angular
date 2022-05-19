@@ -9,7 +9,7 @@
     <ul class="nav-pages">
         <a class="nav-page" mat-button>HOME</a>
         <a class="nav-page" mat-button>SHOP</a>
-        <a class="nav-page" mat-button [matMenuTriggerFor]="cat">CATEGORIES</a>
+        <a class="nav-page cat-angle" mat-button [matMenuTriggerFor]="cat">CATEGORIES <span class="angle">&#xfe40;</span> </a>
         <mat-menu #cat="matMenu">
             <button mat-menu-item>Item 1</button>
             <button mat-menu-item>Item 2</button>

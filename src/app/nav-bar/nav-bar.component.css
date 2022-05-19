@@ -29,6 +29,17 @@
 
 }
 
+.cat-angle{
+    display: flex;
+}
+.angle{
+    /* transform:rotate(90deg); */
+    transform: scale(0.6);
+    position: absolute;
+    left: 127px;
+    top: 0px;
+    display: block;
+}
 .nav-icons {
     margin-top:2%;
     margin-left:5%;
@@ -64,13 +75,13 @@
 }
 
 .search-box:hover>.search-btn {
-    background:#E7E7DE;
-    
+    color: #008891;
+
 }
 
 
 .search-btn {
-    color: #008891;
+    color:#E7E7DE;
     float: right;
     width: 40px;
     height: 40px;
@@ -88,7 +99,7 @@
     outline: none;
     float: left;
     padding: 0;
-    padding-left: 12px;
+    padding-left: 14px;
     color: rgb(0, 0, 0);
     font-size: 16px;
     transition: 0.4s;
