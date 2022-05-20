@@ -1,29 +1,30 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 <style>
-   
+
 </style>
 
 <mat-toolbar class="nav-bar">
     <img class="nav-logo" src="assets/images/bookademiaboldwithoutbackgroundnoname.png" alt="dasdsad">
-    
+
     <ul class="nav-pages">
-        <a class="nav-page" mat-button (click)="goHome()" routerLink="home" routerLinkActive="active-link" >HOME</a>
+        <a class="nav-page" mat-button (click)="goHome()" routerLink="home" routerLinkActive="active-link">HOME</a>
         <a class="nav-page" mat-button>SHOP</a>
-        <a class="nav-page cat-angle" mat-button [matMenuTriggerFor]="cat">CATEGORIES <span class="angle">&#xfe40;</span> </a>
+        <a class="nav-page cat-angle" mat-button [matMenuTriggerFor]="cat">CATEGORIES <span
+                class="angle">&#xfe40;</span> </a>
         <mat-menu #cat="matMenu">
             <button mat-menu-item [matMenuTriggerFor]="sc">Social science</button>
-                <mat-menu #sc="matMenu">
-                    <button mat-menu-item> Anthropology </button>
-                    <button mat-menu-item> Architecture </button>
-                    <button mat-menu-item> Area Studies </button>
-                    <button mat-menu-item> Communication Studies  </button>
-                    <button mat-menu-item> Management and Marketing </button>
-                </mat-menu>
+            <mat-menu #sc="matMenu">
+                <button mat-menu-item> Anthropology </button>
+                <button mat-menu-item> Architecture </button>
+                <button mat-menu-item> Area Studies </button>
+                <button mat-menu-item> Communication Studies </button>
+                <button mat-menu-item> Management and Marketing </button>
+            </mat-menu>
             <button mat-menu-item>Mental Health and Psychology</button>
             <button mat-menu-item>Science and Technology</button>
             <button mat-menu-item>Engineering</button>
             <button mat-menu-item>Medicine and Healthcare</button>
-          </mat-menu>
+        </mat-menu>
     </ul>
 
     <div class="search-box">
@@ -35,7 +36,7 @@
 
     <ul class="nav-icons">
         <button class="nav-icon" mat-icon-button>
-            <mat-icon class="person">person</mat-icon>
+            <mat-icon routerLink="/auth" class="person">person</mat-icon>
         </button>
         <button class="nav-icon" mat-icon-button>
             <mat-icon matBadge="5" matBadgeColor="warn" class="cart">shopping_cart</mat-icon>
@@ -44,8 +45,10 @@
             <mat-icon class="heart">favorite</mat-icon>
         </button>
         <button class="nav-icon" mat-icon-button (click)="goToWishlist()">
-            <mat-icon routerLink="wishlist" routerLinkActive="active-link" class="wishlist">collections_bookmark</mat-icon>
+            <mat-icon routerLink="wishlist" routerLinkActive="active-link" class="wishlist">collections_bookmark
+            </mat-icon>
         </button>
+
     </ul>
 
 </mat-toolbar>
