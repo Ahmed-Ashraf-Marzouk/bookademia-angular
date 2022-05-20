@@ -20,4 +20,8 @@ export class NavBarComponent implements OnInit {
         this.router.navigate(['wishlist']);
     }
 
+    goHome(): void {
+        this.router.navigate([''])
+    }
+
 }

@@ -7,7 +7,7 @@
     <img class="nav-logo" src="assets/images/bookademiaboldwithoutbackgroundnoname.png" alt="dasdsad">
     
     <ul class="nav-pages">
-        <a class="nav-page" mat-button>HOME</a>
+        <a class="nav-page" mat-button (click)="goHome()" routerLink="home" routerLinkActive="active-link" >HOME</a>
         <a class="nav-page" mat-button>SHOP</a>
         <a class="nav-page cat-angle" mat-button [matMenuTriggerFor]="cat">CATEGORIES <span class="angle">&#xfe40;</span> </a>
         <mat-menu #cat="matMenu">
@@ -15,7 +15,7 @@
                 <mat-menu #sc="matMenu">
                     <button mat-menu-item> Anthropology </button>
                     <button mat-menu-item> Architecture </button>
-                    <button mat-menu-item>  Area Studies </button>
+                    <button mat-menu-item> Area Studies </button>
                     <button mat-menu-item> Communication Studies  </button>
                     <button mat-menu-item> Management and Marketing </button>
                 </mat-menu>

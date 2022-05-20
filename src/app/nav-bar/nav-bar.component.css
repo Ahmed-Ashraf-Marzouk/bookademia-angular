@@ -71,7 +71,7 @@
 }
 
 .active-link {
-    color: cyan;
+    color: cyan !important;
 }
 
 .search-box {
