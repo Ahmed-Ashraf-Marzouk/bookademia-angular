@@ -1,0 +1,40 @@
+/* .collection1{
+    position: absolute;
+    padding: 10px;
+    background-color: black;
+    top: 30rem;
+}
+.collection2{
+    position: absolute;
+    padding: 10px;
+    background-color: black;
+    top: 60rem;
+}
+.item{
+    margin-left: 40px;
+}
+.collection-container{
+    position: absolute;
+} */
+
+.container{
+    position: relative;
+    width: 1700px;
+    height: 925px;
+    top: 5rem;
+    left: 100px;
+    margin-bottom: 50px;
+  background-color: #F4F4F4;
+}
+.collection-of-books{
+    position: absolute;
+    right: 3rem;
+    width: 700px;
+    height: 850px;
+    padding: 50px;
+}
+.title-container{
+    position: absolute;
+    top: 20rem;
+    left: 5rem;
+}
