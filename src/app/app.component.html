@@ -4,9 +4,10 @@
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
+<header>
+    <app-nav-bar></app-nav-bar>
+</header>
 
-
-<app-nav-bar></app-nav-bar>
 
 <!-- <div class="container" style="background-color: white;">
     <app-home-navigation></app-home-navigation>
@@ -21,8 +22,14 @@
     <app-bookcollection></app-bookcollection>
 </div> -->
 
+<body>
+    <router-outlet></router-outlet>
+   
+<footer>
+    <app-footer></app-footer>
+</footer>
 
-<router-outlet></router-outlet>
+</body>
 
-    <!-- <app-footer></app-footer>   -->
+
 

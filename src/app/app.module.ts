@@ -27,6 +27,7 @@ import { MaterialModule } from './material/material.module';
 import { HomeNavigationComponent } from './home-navigation/home-navigation.component';
 import { BookcollectionComponent } from './bookcollection/bookcollection.component';
 import { BookDetailsHomepageComponent } from './book-details-homepage/book-details-homepage.component';
+import { ArabicCollectionComponent } from './arabic-collection/arabic-collection.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import { BookDetailsHomepageComponent } from './book-details-homepage/book-detai
     HomeNavigationComponent,
     BookcollectionComponent,
     BookDetailsHomepageComponent,
+    ArabicCollectionComponent,
 
   ],
   imports: [
