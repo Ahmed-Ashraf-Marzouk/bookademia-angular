@@ -1,0 +1,11 @@
+<h1>Check it </h1>
+<mat-grid-list cols="4" rowHeight="1:1.6">
+    <mat-grid-tile *ngFor='let bs of bookSpec; let i=index;'>
+        <img src="/assets/images/book-cover-1.jpeg" alt="">
+        <p>i</p>
+        <form [formGroup]="form">
+            <ngx-star-rating formControlName={{bs.rating}} [id]="'{{i}}'" [disabled] = false>
+            </ngx-star-rating>
+        </form>
+    </mat-grid-tile>
+</mat-grid-list>

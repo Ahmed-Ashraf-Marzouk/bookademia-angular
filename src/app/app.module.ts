@@ -29,6 +29,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 
 import { BookResultComponent } from './book-result/book-result.component';
 import { WishlistPageComponent } from './wishlist-page/wishlist-page.component';
+import { SearchResultPageComponent } from './search-result-page/search-result-page.component';
+import { TestPageComponent } from './test-page/test-page.component';
 
 
 @NgModule({
@@ -44,6 +46,8 @@ import { WishlistPageComponent } from './wishlist-page/wishlist-page.component';
     HomePageComponent,
     BookResultComponent,
     WishlistPageComponent,
+    SearchResultPageComponent,
+    TestPageComponent,
 
   ],
   imports: [

@@ -15,6 +15,8 @@ export class StarRatingComponent implements OnInit {
     this.rating3 = 0;
     this.form = this.fb.group({
       rating: ['', Validators.required],
+      rating2: [2],
+
     })
   }
 
