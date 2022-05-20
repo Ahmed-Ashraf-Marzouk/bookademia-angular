@@ -1,11 +1,18 @@
-<h1>Check it </h1>
-<mat-grid-list cols="4" rowHeight="1:1.6">
+
+
+<div class="side-bar">
+    
+</div>
+
+
+<mat-grid-list cols="3" rowHeight="1:1.6">
     <mat-grid-tile *ngFor='let bs of bookSpec; let i=index;'>
         <img src="/assets/images/book-cover-1.jpeg" alt="">
-        <p>i</p>
-        <form [formGroup]="form">
-            <ngx-star-rating formControlName={{bs.rating}} [id]="'{{i}}'" [disabled] = false>
-            </ngx-star-rating>
+        <form class="rating" [formGroup]="form">
+            <ngx-star-rating *ngIf="bs.rating == 1" formControlName="rating1" [id]=bs.id [disabled] = bs.disable></ngx-star-rating>
+            <ngx-star-rating *ngIf="bs.rating == 2" formControlName="rating2" [id]=bs.id [disabled] = bs.disable></ngx-star-rating>
+            <ngx-star-rating *ngIf="bs.rating == 3" formControlName="rating3" [id]=bs.id [disabled] = bs.disable></ngx-star-rating>
+            <ngx-star-rating *ngIf="bs.rating == 4" formControlName="rating4" [id]=bs.id [disabled] = bs.disable></ngx-star-rating>
         </form>
     </mat-grid-tile>
 </mat-grid-list>

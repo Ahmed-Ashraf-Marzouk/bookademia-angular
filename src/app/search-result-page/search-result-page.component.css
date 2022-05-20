@@ -1,4 +1,36 @@
-mat-grid-list{
-    position: absolute;
-    top: 70%;
+.side-bar{
+    display: inline-block;
+    position: relative;
+    bottom: 100%;
+    width: 30%;
+    margin:5%;
+    border: 1px solid #E7E7DE;
+    height: 100%;
 }
+
+mat-grid-list{
+    display: inline-block;
+    padding: 3%;
+    width: 50%;
+}
+
+
+mat-grid-tile{
+    display: block;
+    padding: 3%;
+}
+
+
+img{
+    height: 63%;
+}
+
+.rating{
+    display: absolute;
+    position: relative;
+    transform: scale(0.5);
+    top:40%;
+    right:40.5%;
+    margin: -40%;
+}
+
