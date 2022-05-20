@@ -17,6 +17,7 @@ import { MainPageBackgroundComponent } from './main-page-background/main-page-ba
 import { FeaterdBooksComponent } from './featerd-books/featerd-books.component';
 import { RecentBooksComponent } from './recent-books/recent-books.component';
 import { BookResultComponent } from './book-result/book-result.component';
+import { WishlistPageComponent } from './wishlist-page/wishlist-page.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { BookResultComponent } from './book-result/book-result.component';
     FeaterdBooksComponent,
     RecentBooksComponent,
     BookResultComponent,
+    WishlistPageComponent,
 
   ],
   imports: [

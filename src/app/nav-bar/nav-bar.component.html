@@ -32,9 +32,11 @@
         <button class="nav-icon" mat-icon-button>
             <mat-icon class="cart">shopping_cart</mat-icon>
         </button>
-        
         <button class="nav-icon" mat-icon-button>
             <mat-icon class="heart">favorite</mat-icon>
+        </button>
+        <button class="nav-icon" mat-icon-button (click)="goToWishlist()">
+            <mat-icon routerLink="wishlist" routerLinkActive="active-link" class="wishlist">collections_bookmark</mat-icon>
         </button>
     </ul>
 

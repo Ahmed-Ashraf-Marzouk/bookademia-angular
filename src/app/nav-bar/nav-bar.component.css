@@ -66,6 +66,14 @@
     color:white;
 }
 
+.wishlist {
+    color: white;
+}
+
+.active-link {
+    color: cyan;
+}
+
 .search-box {
     margin-left:10%;
     background: #ffffff;
