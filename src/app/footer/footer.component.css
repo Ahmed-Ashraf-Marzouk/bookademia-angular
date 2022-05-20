@@ -1,73 +1,10 @@
-.footer {
-    position: relative;
-    top: 200%;
-    height: 30%;
-    background-color:#E7E7DE;
-    padding:0;
+#footer{
+  padding: 10% 10% 5%;
+    text-align: center;
+    background-color:#0F3057;
+    
 }
-
-.footer-basic {
-    padding:40px 0;
-    background-color:#E7E7DE;
-    color:#4b4c4d;
-    width: 130%;
-  }
-  
-  .footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-  }
-  
-  .footer-basic li {
-    padding:0 10px;
-    font-family: 'Poppins', sans-serif;
-
-  }
-  
-  .footer-basic ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.8;
-  }
-  
-  .footer-basic ul a:hover {
+.icon{
+  margin: 20px 10px;
+  color: #fff;
 }
-  
-  .footer-basic .social {
-opacity:1;
-    text-align:center;
-    padding-bottom:25px;
-  }
-  
-  .footer-basic .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid #ccc;
-    margin:0 8px;
-    color:inherit;
-    opacity:0.75;
-  }
-  
-  .footer-basic .social > a:hover {
-    opacity:0.9;
-  }
-  
-  .footer-basic .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:#aaa;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom:0;
-  }
-  
-  /* Credit to https://epicbootstrap.com/snippets/footer-basic */

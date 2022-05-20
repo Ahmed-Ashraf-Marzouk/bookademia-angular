@@ -1,46 +1,28 @@
+.img1{
+    position: absolute;
+    max-width: 50%;
+    left: 10px;
+    top: 400px;
+}
+.img2{
+    position: absolute;
+    max-width: 50%;
+    top: 200px;
+    right: 1px;
+    
 
-h1 , h3{
-    text-align: center; 
- }
- .title-font{
-     font-size: 90px;
-     font-family: 'Times New Roman';
- }
- .button-home{
-     margin-left: 3rem;   
-     z-index: 4;
-     width: 150px;
-     
- }
- .container{
-     position: absolute;
-     width: 1280px;
-     height: 800px;
-     background-color: #81D3F8;
- }
- .div-button-home{
-     display: inline-block;
-     position: absolute;
-     z-index: 2;
-     left: 10rem;
-     bottom: 25rem;
- 
- }
- .img1{
- position: absolute;
- left: 45rem;
- top: 10rem;
- }
- .img2{
-     position: absolute;
-     top: 25rem;
-   }
- .title{
-     position: absolute;
-     top: 7rem;
-     left: 20rem;
-   
- }
- div{
-     display: inline-block;
- }
+    
+}
+
+.container-fluid{
+    padding-top: 200px;  
+    background-color: lightblue; 
+    height: 700px;
+}
+
+button{
+    margin-left: 30px;
+}
+.row{
+    margin-bottom: 50px;
+}
