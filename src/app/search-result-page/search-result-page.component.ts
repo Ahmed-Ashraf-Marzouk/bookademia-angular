@@ -40,6 +40,19 @@ export class SearchResultPageComponent implements OnInit {
     {
       rating: 4, id: "'rating4'", disabled: false
     },
+    {
+      rating: 1, id: "'rating1'", disabled: false
+    },
+
+    {
+      rating: 2, id: "'rating2'", disabled: false
+    },
+
+
+    {
+      rating: 3, id: "'rating3'", disabled: false
+    },
+
 
 
   ];
