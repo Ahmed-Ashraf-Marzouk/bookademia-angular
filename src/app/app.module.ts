@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgxStarRatingModule } from 'ngx-star-rating';
 
-
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -18,16 +17,19 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
-
+import { AuthComponent } from './auth/auth.component';
 
 import { BookResultComponent } from './book-result/book-result.component';
 import { WishlistPageComponent } from './wishlist-page/wishlist-page.component';
+import { SearchResultPageComponent } from './search-result-page/search-result-page.component';
+import { TestPageComponent } from './test-page/test-page.component';
 
 import { MaterialModule } from './material/material.module';
 import { HomeNavigationComponent } from './home-navigation/home-navigation.component';
 import { BookcollectionComponent } from './bookcollection/bookcollection.component';
 import { BookDetailsHomepageComponent } from './book-details-homepage/book-details-homepage.component';
 import { ArabicCollectionComponent } from './arabic-collection/arabic-collection.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,11 +43,14 @@ import { ArabicCollectionComponent } from './arabic-collection/arabic-collection
     HomePageComponent,
     BookResultComponent,
     WishlistPageComponent,
+    SearchResultPageComponent,
+    TestPageComponent,
     HomeNavigationComponent,
     BookcollectionComponent,
     BookDetailsHomepageComponent,
     ArabicCollectionComponent,
 
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,12 +59,10 @@ import { ArabicCollectionComponent } from './arabic-collection/arabic-collection
     ReactiveFormsModule,
     FormsModule,
     NgxStarRatingModule,
-    MaterialModule
-
-
-
+    MaterialModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

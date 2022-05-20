@@ -24,4 +24,8 @@ export class NavBarComponent implements OnInit {
         this.router.navigate([''])
     }
 
+    goSearchResult() {
+        this.router.navigate(['search-result'])
+
+    }
 }
