@@ -27,6 +27,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 
 
 
+import { BookResultComponent } from './book-result/book-result.component';
 
 
 @NgModule({
@@ -40,6 +41,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     FeaturedBooksComponent,
     StarRatingComponent,
     HomePageComponent,
+    BookResultComponent,
+
   ],
   imports: [
     BrowserModule,
