@@ -3,6 +3,7 @@
 .nav-bar {
     background-color:#008891;
     height: 15%;
+    /* z-index: 1000; */
 }
 
 
@@ -22,11 +23,9 @@
 
 
 .nav-page{
-    color:white;
+    color:white !important; 
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
-
-
 }
 
 .cat-angle{
