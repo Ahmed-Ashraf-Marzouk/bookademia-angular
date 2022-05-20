@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MainPageBackgroundComponent } from './main-page-background/main-page-background.component';
 import { FeaterdBooksComponent } from './featerd-books/featerd-books.component';
 import { RecentBooksComponent } from './recent-books/recent-books.component';
+import { BookResultComponent } from './book-result/book-result.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { RecentBooksComponent } from './recent-books/recent-books.component';
     MainPageBackgroundComponent,
     FeaterdBooksComponent,
     RecentBooksComponent,
+    BookResultComponent,
 
   ],
   imports: [
