@@ -1,0 +1,50 @@
+
+h1 , h3{
+    text-align: center; 
+ }
+ .title-font{
+     font-size: 90px;
+     font-family: 'Times New Roman';
+ }
+ .button-home{
+     margin-left: 3rem;   
+     z-index: 4;
+     width: 150px;
+     
+ }
+ .container{
+     position: absolute;
+     width: 1700px;
+     height: 800px;
+     background-color: #81D3F8;
+ }
+ .div-button-home{
+     display: inline-block;
+     position: absolute;
+     z-index: 2;
+     left: 24rem;
+     bottom: 25rem;
+ 
+ }
+ .img1{
+ position: absolute;
+ left: 65rem;
+ top: 10rem;
+ }
+ .img2{
+     position: absolute;
+     top: 25rem;
+     left: 3rem;
+   
+    
+    
+   }
+ .title{
+     position: absolute;
+     top: 7rem;
+     left: 35rem;
+   
+ }
+ div{
+     display: inline-block;
+ }

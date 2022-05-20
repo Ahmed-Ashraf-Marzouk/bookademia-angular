@@ -24,6 +24,9 @@ import { BookResultComponent } from './book-result/book-result.component';
 import { WishlistPageComponent } from './wishlist-page/wishlist-page.component';
 
 import { MaterialModule } from './material/material.module';
+import { HomeNavigationComponent } from './home-navigation/home-navigation.component';
+import { BookcollectionComponent } from './bookcollection/bookcollection.component';
+import { BookDetailsHomepageComponent } from './book-details-homepage/book-details-homepage.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +40,9 @@ import { MaterialModule } from './material/material.module';
     HomePageComponent,
     BookResultComponent,
     WishlistPageComponent,
+    HomeNavigationComponent,
+    BookcollectionComponent,
+    BookDetailsHomepageComponent,
 
   ],
   imports: [
