@@ -12,47 +12,37 @@ export class SearchResultPageComponent implements OnInit {
 
   bookSpec: any[] = [
     {
-      rating: 1, id: "'rating1'", disabled: false
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
     },
 
     {
-      rating: 2, id: "'rating2'", disabled: false
-    },
-
-
-    {
-      rating: 3, id: "'rating3'", disabled: false
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
     },
 
 
     {
-      rating: 4, id: "'rating4'", disabled: false
-    },
-
-    {
-      rating: 4, id: "'rating4'", disabled: false
-    },
-
-    {
-      rating: 4, id: "'rating4'", disabled: false
-    },
-
-    {
-      rating: 4, id: "'rating4'", disabled: false
-    },
-    {
-      rating: 1, id: "'rating1'", disabled: false
-    },
-
-    {
-      rating: 2, id: "'rating2'", disabled: false
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
     },
 
 
     {
-      rating: 3, id: "'rating3'", disabled: false
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
     },
 
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
+
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
+
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
 
 
   ];
