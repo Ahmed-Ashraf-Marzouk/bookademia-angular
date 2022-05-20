@@ -1,0 +1,20 @@
+mat-grid-list{
+    position: relative;
+    top: 140%;
+}
+
+mat-grid-tile {
+    background: lightblue;
+    width: 200%;
+  }
+
+img{
+    width: 60%;
+}
+
+app-star-rating{    
+    padding: 0px;
+    position: absolute;
+    transform: scale(0.7);
+    top: 85%;
+}

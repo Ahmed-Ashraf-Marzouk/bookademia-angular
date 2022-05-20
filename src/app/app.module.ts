@@ -10,12 +10,23 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { NgxStarRatingModule } from 'ngx-star-rating';
+
+
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainPageBackgroundComponent } from './main-page-background/main-page-background.component';
-import { FeaterdBooksComponent } from './featerd-books/featerd-books.component';
 import { RecentBooksComponent } from './recent-books/recent-books.component';
+import { FeaturedBooksComponent } from './featured-books/featured-books.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { StarRatingComponent } from './star-rating/star-rating.component';
+import { HomePageComponent } from './home-page/home-page.component';
+
+
+
 import { BookResultComponent } from './book-result/book-result.component';
 import { WishlistPageComponent } from './wishlist-page/wishlist-page.component';
 
@@ -27,8 +38,10 @@ import { WishlistPageComponent } from './wishlist-page/wishlist-page.component';
     HeaderComponent,
     FooterComponent,
     MainPageBackgroundComponent,
-    FeaterdBooksComponent,
     RecentBooksComponent,
+    FeaturedBooksComponent,
+    StarRatingComponent,
+    HomePageComponent,
     BookResultComponent,
     WishlistPageComponent,
 
@@ -43,6 +56,14 @@ import { WishlistPageComponent } from './wishlist-page/wishlist-page.component';
     MatIconModule,
     MatInputModule,
     MatMenuModule,
+    MatGridListModule,
+    MatSnackBarModule,
+    ReactiveFormsModule,
+    FormsModule,
+    NgxStarRatingModule,
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

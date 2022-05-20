@@ -21,7 +21,6 @@
     float: left;
     position: absolute;
     transform: scale(0.6);
-
     top: -30%;
     left: -10%;
     transition: left 6s ease-in-out;
