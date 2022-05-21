@@ -1,20 +1,8 @@
 .container{
-    position: relative;
-    width: 1280px;
-    height: 925px;
-    top: 5rem;
-    left: 100px;
-    margin-bottom: 50px;
-  background-color: #F4F4F4;
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 60px;
+  margin-bottom: 20px;
+  background-color: #E7E7DE;
 }
-.collection-of-books{
-    position: absolute;
-    width: 700px;
-    height: 850px;
-    padding: 50px;
-}
-.title-container{
-    position: absolute;
-    top: 20rem;
-    left: 5rem;
-}
+  

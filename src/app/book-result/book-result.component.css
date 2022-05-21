@@ -1,0 +1,157 @@
+
+.book-image {
+  width: 17%;
+  height: 53.4%;
+  margin-left: 7%;
+  margin-top: 5%;
+  border-radius: 10%;
+}
+
+.book-name {
+    font-weight: bold;
+    position: absolute;
+    left: 30%;
+    top: 34%;
+    font-size: 69px;
+    color: #0a5b61;
+    width: 30%;
+    height: 100px;
+    text-align: justify;
+    overflow: auto;
+    padding-top: 0.8%;
+}
+
+.book-author {
+    position: absolute;
+    left: 30%;
+    top: 48.5%;
+    font-size: 41px;
+    color: #06383b;
+    width: 30%;
+    height: 100px;
+    text-align: justify;
+    overflow: auto;
+}
+
+.circle-image-1 {
+    width: 6%;
+    position: absolute;
+    left: 30%;
+    top: 60%;
+}
+
+.circle-image-1-data {
+    position: absolute;
+    left: 31.6%;
+    top: 62.2%;
+    color: white;
+}
+
+.circle-image-1-data:hover {
+    color: green;
+    font-weight: bold;
+}
+
+.circle-image-2 {
+    border: 1px solid grey;
+    border-radius: 48px;
+    width: 6%;
+    position: absolute;
+    left: 37%;
+    top: 60%;
+}
+
+.circle-image-2-data {
+    position: absolute;
+    left: 38.1%;
+    top: 62.3%;
+    color: rgb(5, 5, 85);
+}
+
+.circle-image-2-data:hover {
+    color: red;
+    font-weight: bold;
+}
+
+.book-description-label {
+    position: absolute;
+    left: 30%;
+    top: 85%;
+    font-size: 59px;
+    color: #0a5b61;
+}
+
+.book-description-data {
+    width: 51%;
+    height: 234px;
+    text-align: justify;
+    position: absolute;
+    left: 30%;
+    top: 95%;
+    font-size: 19.5px;
+    color: rgb(27, 18, 18);
+    overflow: auto;
+  }
+
+  .author-label {
+    position: absolute;
+    left: 30%;
+    top: 134%;
+    font-size: 59px;
+    color: #0a5b61;
+}
+
+.author-image {
+    width: 9%;
+    position: absolute;
+    left: 30%;
+    top: 144%;
+    border-radius: 52%;
+  }
+
+  .author-description-data {
+    width: 51%;
+    height: 182px;
+    text-align: justify;
+    position: absolute;
+    left: 42%;
+    top: 145%;
+    font-size: 19.5px;
+    color: rgb(27, 18, 18);
+    overflow: auto;
+  }
+
+  .recommended-label {
+    position: absolute;
+    top: 191%;
+    left: 29%;
+    font-size: 59px;
+    color: #0a5b61;
+}
+
+.recommended-book-1 {
+    width: 16%;
+    position: absolute;
+    left: 15%;
+    top: 208%;
+    height: 52%;
+    border-radius: 10%;
+  }
+
+  .recommended-book-2 {
+    width: 16%;
+    position: absolute;
+    left: 40%;
+    top: 208%;
+    height: 52%;
+    border-radius: 10%;
+  }
+
+  .recommended-book-3 {
+    width: 16%;
+    position: absolute;
+    left: 66%;
+    top: 208%;
+    border-radius: 10%;
+    height: 52%;
+  }

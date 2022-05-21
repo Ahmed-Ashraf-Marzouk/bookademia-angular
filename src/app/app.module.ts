@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgxStarRatingModule } from 'ngx-star-rating';
 
-
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -18,7 +17,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
-
+import { AuthComponent } from './auth/auth.component';
 
 import { BookResultComponent } from './book-result/book-result.component';
 import { WishlistPageComponent } from './wishlist-page/wishlist-page.component';
@@ -31,6 +30,10 @@ import { BookcollectionComponent } from './bookcollection/bookcollection.compone
 import { BookDetailsHomepageComponent } from './book-details-homepage/book-details-homepage.component';
 import { SideBarSearchResultComponent } from './side-bar-search-result/side-bar-search-result.component';
 import { FliterSearchResultComponent } from './fliter-search-result/fliter-search-result.component';
+import { ArabicCollectionComponent } from './arabic-collection/arabic-collection.component';
+import { HttpClientModule } from '@angular/common/http';
+import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,9 +52,15 @@ import { FliterSearchResultComponent } from './fliter-search-result/fliter-searc
     HomeNavigationComponent,
     BookcollectionComponent,
     BookDetailsHomepageComponent,
+<<<<<<< HEAD
     SideBarSearchResultComponent,
     FliterSearchResultComponent,
+=======
+    ArabicCollectionComponent,
+>>>>>>> e36454aab8a28ec1c51bd1a59e14747ecd6b977c
 
+    AuthComponent,
+    loadingSpinnerComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,12 +69,10 @@ import { FliterSearchResultComponent } from './fliter-search-result/fliter-searc
     ReactiveFormsModule,
     FormsModule,
     NgxStarRatingModule,
-    MaterialModule
-
-
-
+    MaterialModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
