@@ -29,3 +29,20 @@ button {
 button:hover {
   background-color: rgba(20, 195, 142, 0.75);
 }
+
+.spinner-box {
+  margin: auto;
+  height: 100vh;
+  text-align: center;
+  padding: 100px;
+}
+.alert {
+  padding: 20px;
+  background-color: rgba(244, 67, 54, 0.6); /* Red */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px auto;
+  width: 20%;
+  text-align: center;
+}
