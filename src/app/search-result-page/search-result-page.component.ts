@@ -21,14 +21,28 @@ export class SearchResultPageComponent implements OnInit {
 
 
     {
+
       rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
     },
-
 
     {
       rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
     },
 
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
+
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
+
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
     {
       rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
     },

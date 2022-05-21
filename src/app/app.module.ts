@@ -29,6 +29,8 @@ import { MaterialModule } from './material/material.module';
 import { HomeNavigationComponent } from './home-navigation/home-navigation.component';
 import { BookcollectionComponent } from './bookcollection/bookcollection.component';
 import { BookDetailsHomepageComponent } from './book-details-homepage/book-details-homepage.component';
+import { SideBarSearchResultComponent } from './side-bar-search-result/side-bar-search-result.component';
+import { FliterSearchResultComponent } from './fliter-search-result/fliter-search-result.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +49,8 @@ import { BookDetailsHomepageComponent } from './book-details-homepage/book-detai
     HomeNavigationComponent,
     BookcollectionComponent,
     BookDetailsHomepageComponent,
+    SideBarSearchResultComponent,
+    FliterSearchResultComponent,
 
   ],
   imports: [

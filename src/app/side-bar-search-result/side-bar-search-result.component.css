@@ -1,0 +1,32 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.side-bar{
+    display: inline-block;
+    position: absolute;
+    /* bottom: 100%; */
+    width: 30%;
+    margin:5%;
+    border: 1px solid #E7E7DE;
+    height: 200%;
+}
+
+
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
+
+
+
+  .title{
+      background-color: #E7E7DE;
+      margin-bottom:3%;
+      padding: 3%;  
+  }
