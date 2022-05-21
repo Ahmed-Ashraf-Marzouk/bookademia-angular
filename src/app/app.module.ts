@@ -30,6 +30,8 @@ import { BookcollectionComponent } from './bookcollection/bookcollection.compone
 import { BookDetailsHomepageComponent } from './book-details-homepage/book-details-homepage.component';
 import { ArabicCollectionComponent } from './arabic-collection/arabic-collection.component';
 import { HttpClientModule } from '@angular/common/http';
+import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,6 +53,7 @@ import { HttpClientModule } from '@angular/common/http';
     ArabicCollectionComponent,
 
     AuthComponent,
+    loadingSpinnerComponent,
   ],
   imports: [
     BrowserModule,
