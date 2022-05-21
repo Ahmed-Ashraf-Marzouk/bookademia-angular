@@ -8,7 +8,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class SearchResultPageComponent implements OnInit {
 
-
+  // database
 
   bookSpec: any[] = [
     {
