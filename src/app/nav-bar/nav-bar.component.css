@@ -6,6 +6,9 @@
     /* z-index: 1000; */
 }
 
+.nav-bar *{
+    z-index: 1000;
+}
 
 .nav-logo {
     margin-right: 15%;
