@@ -14,7 +14,7 @@
 
 <mat-grid-list cols="3"  rowHeight="1:2">
     <mat-grid-tile *ngFor='let bs of bookSpec; let i=index;'>
-        <img src="/assets/images/book-cover-1.jpeg" alt="">
+        <img src="/assets/images/book-cover-1.jpeg" alt="" (click)="goToBookResult()">
         <form class="rating" [formGroup]="form">
             <p>{{bs.name}}</p>
             <ngx-star-rating *ngIf="bs.rating == 1" formControlName="rating1" [id]=bs.id [disabled] = bs.disable></ngx-star-rating>

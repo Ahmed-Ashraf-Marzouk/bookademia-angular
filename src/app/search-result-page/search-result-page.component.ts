@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import {Router} from "@angular/router"
+
 
 @Component({
   selector: 'app-search-result-page',
@@ -63,7 +65,7 @@ export class SearchResultPageComponent implements OnInit {
   public form: FormGroup;
   rating3: number;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router) {
     this.rating3 = 0;
     this.form = this.fb.group({
       rating: ['', Validators.required],
@@ -74,6 +76,13 @@ export class SearchResultPageComponent implements OnInit {
       rating5: [5]
 
     })
+  }
+
+
+  goToBookResult(){
+
+    this.router.navigate(['/book-result'])
+
   }
 
   ngOnInit(): void {
