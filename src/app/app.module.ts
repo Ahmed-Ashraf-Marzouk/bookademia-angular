@@ -52,12 +52,9 @@ import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
     HomeNavigationComponent,
     BookcollectionComponent,
     BookDetailsHomepageComponent,
-<<<<<<< HEAD
     SideBarSearchResultComponent,
     FliterSearchResultComponent,
-=======
     ArabicCollectionComponent,
->>>>>>> e36454aab8a28ec1c51bd1a59e14747ecd6b977c
 
     AuthComponent,
     loadingSpinnerComponent,

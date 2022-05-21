@@ -8,7 +8,7 @@
     width: 30%;
     margin:5%;
     border: 1px solid #E7E7DE;
-    height: 200%;
+    height: 140%;
 }
 
 
@@ -29,4 +29,16 @@
       background-color: #E7E7DE;
       margin-bottom:3%;
       padding: 3%;  
+  }
+
+
+  .side-component{
+      margin-left:5%;
+      margin-bottom: 4%;
+  }
+
+  .publish{
+    margin-top:2%;
+
+
   }

@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class SideBarSearchResultComponent implements OnInit {
 
   publishDate: any;
-  choices: string[] = ['All titles', 'Last 90 days', 'Last 180 days', 'Last 1 year', 'Published since:'];
+  choices: string[] = ['All titles', 'Last 90 days', 'Last 180 days', 'Last 1 year'];
   book_types: FormGroup;
 
   constructor(fb: FormBuilder) {
