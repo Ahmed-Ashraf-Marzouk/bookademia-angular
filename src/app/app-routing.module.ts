@@ -5,13 +5,21 @@ import { WishlistPageComponent } from './wishlist-page/wishlist-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SearchResultPageComponent } from './search-result-page/search-result-page.component';
 import { AuthComponent } from './auth/auth.component';
+import { AuthGuard } from './auth/auth-guard';
 
 const routes: Routes = [
   { path: '', pathMatch: 'prefix', redirectTo: 'home' },
   { path: 'home', component: HomePageComponent },
   { path: 'search-result', component: SearchResultPageComponent },
-  { path: 'book-result', component: BookResultComponent },
-  { path: 'wishlist', component: WishlistPageComponent },
+  {
+    path: 'book-result',
+    component: BookResultComponent,
+  },
+  {
+    path: 'wishlist',
+    component: WishlistPageComponent,
+    canActivate: [AuthGuard],
+  },
   { path: 'auth', component: AuthComponent },
 ];
 
@@ -24,4 +32,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

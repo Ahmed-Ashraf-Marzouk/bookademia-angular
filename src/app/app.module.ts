@@ -27,8 +27,10 @@ import { TestPageComponent } from './test-page/test-page.component';
 
 import { MaterialModule } from './material/material.module';
 import { HomeNavigationComponent } from './home-navigation/home-navigation.component';
-import { BookcollectionComponent } from './bookcollection/bookcollection.component';
+import { BookCollectionComponent } from './book-collection/book-collection.component';
 import { BookDetailsHomepageComponent } from './book-details-homepage/book-details-homepage.component';
+import { SideBarSearchResultComponent } from './side-bar-search-result/side-bar-search-result.component';
+import { FliterSearchResultComponent } from './fliter-search-result/fliter-search-result.component';
 import { ArabicCollectionComponent } from './arabic-collection/arabic-collection.component';
 import { HttpClientModule } from '@angular/common/http';
 import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
@@ -49,8 +51,10 @@ import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
     SearchResultPageComponent,
     TestPageComponent,
     HomeNavigationComponent,
-    BookcollectionComponent,
+    BookCollectionComponent,
     BookDetailsHomepageComponent,
+    SideBarSearchResultComponent,
+    FliterSearchResultComponent,
     ArabicCollectionComponent,
 
     AuthComponent,
@@ -70,4 +74,4 @@ import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

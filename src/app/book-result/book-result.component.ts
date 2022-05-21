@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-book-result',
   templateUrl: './book-result.component.html',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookResultComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.router.events.subscribe((event) => {
+      if (!(event instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
   }
 
 }
