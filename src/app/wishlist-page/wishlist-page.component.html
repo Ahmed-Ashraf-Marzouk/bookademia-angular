@@ -1,0 +1,12 @@
+<div *ngFor="let book of booksInWishlist">
+  <mat-card fxLayout="row wrap" fxLayoutAlign="space-between center">
+    <mat-card-header><img src="{{ book.img_url }}" height="256px"></mat-card-header>
+    <mat-card-title>{{ book.name }}</mat-card-title>
+    <mat-card-subtitle>{{ book.price }}</mat-card-subtitle>
+    <mat-card-subtitle style="color: green" *ngIf="book.inStock"> <mat-icon>check_circle</mat-icon>In Stock</mat-card-subtitle>
+    <mat-card-subtitle style="color: red" *ngIf="!book.inStock"><mat-icon>dangerous</mat-icon> Out of Stock</mat-card-subtitle>
+    <mat-card-actions>
+      <td><button mat-raised-button (click)="myCart.addToCart(book)">Add to Cart</button></td>
+    </mat-card-actions>
+  </mat-card>
+</div>

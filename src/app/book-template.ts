@@ -1,10 +1,11 @@
 
 export class Book {
+
     constructor(id: any, name: any, author: any, publish: any, rating: any, img_url: any, description: any, category: any, edition: any, price: any, inStock: any) {
         this.name = name;
         this.id = id;
         this.author = author;
-        this.publish = this.publish;
+        this.publish = publish;
         this.rating = rating;
         this.img_url = img_url;
         this.description = description;
