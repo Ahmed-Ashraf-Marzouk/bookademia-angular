@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgxStarRatingModule } from 'ngx-star-rating';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HeaderComponent } from './header/header.component';
@@ -33,6 +34,7 @@ import { FliterSearchResultComponent } from './fliter-search-result/fliter-searc
 import { ArabicCollectionComponent } from './arabic-collection/arabic-collection.component';
 import { HttpClientModule } from '@angular/common/http';
 import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+import { RequestBookComponent } from './request-book/request-book.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +60,7 @@ import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
 
     AuthComponent,
     loadingSpinnerComponent,
+    RequestBookComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,6 +69,7 @@ import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
     ReactiveFormsModule,
     FormsModule,
     NgxStarRatingModule,
+    FlexLayoutModule,
     MaterialModule,
     HttpClientModule,
   ],

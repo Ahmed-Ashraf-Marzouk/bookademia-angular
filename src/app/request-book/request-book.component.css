@@ -1,0 +1,161 @@
+main-page-background {
+    padding: 0;
+    margin: 0;
+    float: left;
+    position: absolute;
+    top: -30%;
+    left: -20%;
+    transform: scale(0.6);
+    z-index: 10;
+    transition: left 6s ease-in-out;
+    animation: 2s ease-out 0s 1 logoFade;
+
+}
+
+
+
+.main-page-background-clouds {
+
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    float: left;
+    position: absolute;
+    transform: scale(0.6);
+    top: 10%;
+    left: 10%;
+  
+    transition: left 6s ease-in-out;
+    z-index: 0;
+    animation: 2s ease-out 0s 1 logoFade;
+
+
+}
+
+@keyframes logoFade {
+    0% {
+        opacity: 0%;
+
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+@keyframes titleUpDownWithFade {
+    0% {
+        opacity: 0%;
+        transform: translateY(-50%);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+
+.title {
+
+    animation: 1s ease-out 0s 1 titleUpDownWithFade;
+    padding: 0;
+    margin: 0;
+    float: left;
+    position: absolute;
+    font-size: 50px;
+    top: 25%;
+    left: 50%;
+    transition: left 6s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    z-index: 2;
+
+}
+
+.title-2 {
+    top: 50%;
+    /* padding-left:25.5%; */
+}
+
+.main-page-background:hover {
+    left: -15%;
+}
+
+.main-page-background:hover+.main-page-background-clouds {
+    left: -20%;
+}
+
+
+.title:hover~.main-page-background-clouds {
+    left: -20%;
+}
+
+.title:hover~.main-page-background {
+    left: -15%;
+}
+
+
+
+
+.main-page-background-books {
+
+    padding: 0;
+    margin: 0;
+    float: left;
+    position: absolute;
+    transform: scale(0.3);
+    top: -40%;
+    left: 25%;
+    transition: top 6s ease-in-out;
+    z-index: 3;
+    animation: 3s ease-out 0s 1 logoFade;
+
+
+}
+
+
+.title:hover~.main-page-background-books {
+    top: -35%;
+}
+
+
+
+.title:hover~.main-page-background-dots {
+    left: 27%;
+
+}
+
+
+.title:hover~.main-page-background-dots-2 {
+    left: 32%;
+}
+
+.main-page-background-dots {
+
+    padding: 0;
+    margin: 0;
+    float: left;
+    position: absolute;
+    transform: scale(0.4);
+    top: -20%;
+    left: 25%;
+    transition: left 6s ease-in-out;
+    animation: 1s ease-out 0s 1 logoFade;
+}
+
+
+.main-page-background-dots-2 {
+
+    padding: 0;
+    margin: 0;
+    float: left;
+    position: absolute;
+    transform: scale(0.4);
+    top: 25%;
+    left: 30%;
+    transition: left 6s ease-in-out;
+    z-index: 1;
+    animation: 1s ease-out 0s 1 logoFade;
+}
