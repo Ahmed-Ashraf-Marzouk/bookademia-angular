@@ -13,12 +13,13 @@
 
                 <div class="form-group">
                     <label for="email">E-Mail</label>
-                    <input type="email" id="email" class="form-control " ngModel name="email" required email />
+                    <input type="email" id="email" placeholder="example@gmail.com" class="form-control " ngModel
+                        name="email" required email />
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" class="form-control" ngModel name="password" required
-                        minlength="6" />
+                    <input type="password" id="password" placeholder="at least 6 numbers" class="form-control" ngModel
+                        name="password" required minlength="6" />
                 </div>
                 <div class="mx-auto">
                     <button class="btn btn-primary mr-4" type="submit"
@@ -28,6 +29,7 @@
                     <button class="btn btn-primary" (click)="onSwitchMode()" type="button">Switch to {{isLoginMode?
                         "Sing Up":"login"}}</button>
                 </div>
+
             </div>
         </form>
     </div>

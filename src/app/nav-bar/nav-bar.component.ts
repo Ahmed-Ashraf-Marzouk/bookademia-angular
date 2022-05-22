@@ -31,4 +31,8 @@ export class NavBarComponent implements OnInit {
         this.book_specs = responseData
       });
   }
+
+  goUserProfile() {
+    this.router.navigate(['user-profile']);
+  }
 }

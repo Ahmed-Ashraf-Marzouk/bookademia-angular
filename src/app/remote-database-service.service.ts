@@ -14,7 +14,8 @@ export class RemoteDatabaseServiceService {
 
 
   postBook(book: Book) {
-    this.client.post('https://bookademia-b1d66-default-rtdb.firebaseio.com/book.json', book)
+    // this.client.post('https://bookademia-b1d66-default-rtdb.firebaseio.com/book.json', book)
+    this.client.post('https://collaborative-document-default-rtdb.firebaseio.com/book.json', book)
       .subscribe(responseData => {
         console.log(responseData);
       });
@@ -22,15 +23,18 @@ export class RemoteDatabaseServiceService {
   }
 
   getBooks(): any {
-    this.client.get('https://collaborative-document-default-rtdb.firebaseio.com/book/name.json')
+    let books: Book[] = [];
+
+    // this.client.get('https://bookademia-b1d66-default-rtdb.firebaseio.com/book.json')
+    this.client.get('https://collaborative-document-default-rtdb.firebaseio.com/book.json')
       .pipe(map(responseData => {
-        let books: Book[] = [];
 
         for (const [key, value] of Object.entries(responseData)) {
-          books.push(new Book(value['name']));
+          books.push(new Book(value['id'], value['name'], value['author'], value['publish'], value['rating'], value['img_url'], value['description'], value['category'], value['edition'], value['price'], value['inStock']));
         }
         return books;
-      }));
+      })).subscribe(responseData => { console.log(responseData) });
+    return books
   }
 
   // value['name'], value['author'], value['publish'], value['rating'], value['img_url'], value['description'], value['category'], value['edition'], value['price'], value['inStock']
