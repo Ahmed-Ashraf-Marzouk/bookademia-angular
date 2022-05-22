@@ -7,6 +7,7 @@ import { SearchResultPageComponent } from './search-result-page/search-result-pa
 import { AuthComponent } from './auth/auth.component';
 import { AuthGuard } from './auth/auth-guard';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { RequestBookComponent } from './request-book/request-book.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'prefix', redirectTo: 'home' },
@@ -26,6 +27,10 @@ const routes: Routes = [
     path: 'user-profile',
     component: UserProfileComponent,
     canActivate: [AuthGuard],
+  },
+  {
+    path: 'request-book',
+    component: RequestBookComponent,
   },
 ];
 

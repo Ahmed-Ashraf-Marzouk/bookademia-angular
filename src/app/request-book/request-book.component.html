@@ -1,24 +1,25 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 <div class="container">
     <div class="col-lg-6">
-    <h1 class="title"><span class="title-book col-m-3">Pick the</span></h1>
-    
-    <h1 class="title title-2"><span class="title-book">right book</span></h1>
-    
-    
-    
-    <img class="main-page-background" src="/assets/images/main-page-1.svg" alt="">
-    
-    
-    <img class="main-page-background-clouds" src="/assets/images/main-page-1-clouds.svg" alt="">
-    
-    <!-- <img class="main-page-background-books" src="/assets/images/books.svg" alt=""> -->
-    
-    <!-- <img class="main-page-background-dots" src="/assets/images/dots.svg" alt=""> -->
-    <!-- <img class="main-page-background-dots-2" src="/assets/images/dots.svg" alt=""> -->
+        <h1 class="title"><span class="title-book col-m-3">Pick the</span></h1>
+
+        <h1 class="title title-2"><span class="title-book">right book</span></h1>
+
+
+
+        <img class="main-page-background" src="/assets/images/main-page-1.svg" alt="">
+
+
+        <img class="main-page-background-clouds" src="/assets/images/main-page-1-clouds.svg" alt="">
+
+        <!-- <img class="main-page-background-books" src="/assets/images/books.svg" alt=""> -->
+
+        <!-- <img class="main-page-background-dots" src="/assets/images/dots.svg" alt=""> -->
+        <!-- <img class="main-page-background-dots-2" src="/assets/images/dots.svg" alt=""> -->
     </div>
-    
+
 </div>
 
 
@@ -29,41 +30,53 @@
     <div class="col-m-6">
         <h1 style="margin-top: 10px;">Request Book</h1>
 
-        <form  [formGroup]="reqBook"  #userform="ngForm" (ngSubmit)="onSubmit(reqBook)">
-            
+        <form [formGroup]="reqBook" #userform="ngForm" (ngSubmit)="onSubmit(reqBook)">
+
             <div class="form-group">
-                <label >Book name</label>
-                <input type="text" formControlName="bookName"   [class.is-invalid]="reqBook.get('bookName')?.invalid&&reqBook.get('bookName')?.touched"
-                 class="form-control" name="bookName" ngModel  style="margin-bottom:5px ;" >
-                <small class="text-danger"[class.d-none]="reqBook.get('bookName')?.valid || reqBook.get('bookName')?.untouched">name is required</small>
-                </div>
-           
+                <label>Book name</label>
+                <input type="text" formControlName="bookName"
+                    [class.is-invalid]="reqBook.get('bookName')?.invalid&&reqBook.get('bookName')?.touched"
+                    class="form-control" name="bookName" ngModel style="margin-bottom:5px ;">
+                <small class="text-danger"
+                    [class.d-none]="reqBook.get('bookName')?.valid || reqBook.get('bookName')?.untouched">name is
+                    required</small>
+            </div>
+
             <div class="form-group">
                 <label>Book ID</label>
-                <input type="number" formControlName="bookId"  class="form-control" [class.is-invalid]="reqBook.get('bookId')?.invalid && reqBook.get('bookId')?.touched" name="bookId"ngModel style="margin-bottom:5px ;">
-                <small class="text-danger" [class.d-none]="reqBook.get('bookId')?.valid || reqBook.get('bookId')?.untouched">ID is required</small>
-    
+                <input type="number" formControlName="bookId" class="form-control"
+                    [class.is-invalid]="reqBook.get('bookId')?.invalid && reqBook.get('bookId')?.touched" name="bookId"
+                    ngModel style="margin-bottom:5px ;">
+                <small class="text-danger"
+                    [class.d-none]="reqBook.get('bookId')?.valid || reqBook.get('bookId')?.untouched">ID is
+                    required</small>
+
             </div>
-    
-            
+
+
             <div class="form-group">
                 <label>Year</label>
-                <input type="number" formControlName="year"  class="form-control" [class.is-invalid]="reqBook.get('year')?.invalid && reqBook.get('year')?.touched" name="bookId"ngModel style="margin-bottom:5px ;">
-                <small class="text-danger" [class.d-none]="reqBook.get('year')?.valid || reqBook.get('year')?.untouched">Year is required</small>
-    
+                <input type="number" formControlName="year" class="form-control"
+                    [class.is-invalid]="reqBook.get('year')?.invalid && reqBook.get('year')?.touched" name="bookId"
+                    ngModel style="margin-bottom:5px ;">
+                <small class="text-danger"
+                    [class.d-none]="reqBook.get('year')?.valid || reqBook.get('year')?.untouched">Year is
+                    required</small>
+
             </div>
-    
+
             <div class="form-group">
                 <label>Email</label>
-                <input type="email" class="form-control" formControlName="email" name="email"ngModel style="margin-bottom:5px ;">
+                <input type="email" class="form-control" formControlName="email" name="email" ngModel
+                    style="margin-bottom:5px ;">
             </div>
-    
+
             <div class="form-group">
-                <button [disabled]="userform.form.invalid" class="btn btn-primary" > submit</button>
+                <button [disabled]="userform.form.invalid" class="btn btn-primary"> submit</button>
                 <small *ngIf="isSubmitted" style="margin-left: 5px; color: green;">form submitted successfully</small>
             </div>
-         
+
         </form>
     </div>
-    
+
 </div>

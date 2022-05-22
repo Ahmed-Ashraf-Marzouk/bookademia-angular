@@ -1,10 +1,14 @@
-#footer{
+#footer {
   padding: 10% 10% 5%;
-    text-align: center;
-    background-color:#008891;
-    
+  text-align: center;
+  background-color: #008891;
 }
-.icon{
+.icon {
   margin: 20px 10px;
   color: #fff;
+}
+
+.request-button {
+  background-color: white;
+  margin-bottom: 5%;
 }
