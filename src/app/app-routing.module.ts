@@ -6,6 +6,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SearchResultPageComponent } from './search-result-page/search-result-page.component';
 import { AuthComponent } from './auth/auth.component';
 import { AuthGuard } from './auth/auth-guard';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'prefix', redirectTo: 'home' },
@@ -21,6 +22,7 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   { path: 'auth', component: AuthComponent },
+  { path: 'user-profile', component: UserProfileComponent },
 ];
 
 @NgModule({
@@ -32,4 +34,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

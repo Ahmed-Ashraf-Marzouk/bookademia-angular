@@ -33,6 +33,7 @@ import { FliterSearchResultComponent } from './fliter-search-result/fliter-searc
 import { ArabicCollectionComponent } from './arabic-collection/arabic-collection.component';
 import { HttpClientModule } from '@angular/common/http';
 import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
 
     AuthComponent,
     loadingSpinnerComponent,
+    UserProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,4 +74,4 @@ import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

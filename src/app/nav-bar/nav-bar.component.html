@@ -35,8 +35,8 @@
     </div>
 
     <ul class="nav-icons">
-        <button class="nav-icon" mat-icon-button>
-            <mat-icon routerLink="/auth" class="person">person</mat-icon>
+        <button class="nav-icon" (click)="goUserProfile()" mat-icon-button>
+            <mat-icon class="person">person</mat-icon>
         </button>
         <button class="nav-icon" mat-icon-button>
             <mat-icon matBadge="5" matBadgeColor="warn" class="cart">shopping_cart</mat-icon>
