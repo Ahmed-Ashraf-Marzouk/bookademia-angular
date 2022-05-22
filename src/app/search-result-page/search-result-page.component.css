@@ -40,10 +40,26 @@ img:hover{
 .rating{
     display: absolute;
     position: relative;
-    transform: scale(0.5);
+    transform: scale(0.6);
     top:35%;
-    right:50%;
-    margin: -50%;
+    right:37%;
+    margin-left: -50%;
+    margin-right: -25%;
     z-index: 3;
 }
 
+.title{
+    position: relative;
+    left: 5%
+}
+
+mat-form-field{
+    z-index: 2000;
+}
+
+.example-form{
+    margin-left:57%;
+    margin-top: 5%;
+    z-index: 1000;
+    /* width: 300% */
+}
