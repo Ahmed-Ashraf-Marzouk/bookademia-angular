@@ -23,13 +23,7 @@ export class NavBarComponent implements OnInit {
   }
 
   goSearchResult() {
-    // this.router.navigate(['search-result']);
-    this.service.getBooks()
-      .subscribe((responseData: Book[]) => {
-        console.log("hewfkl");
-        console.log(responseData);
-        this.book_specs = responseData
-      });
+    this.router.navigate(['search-result']);
   }
 
   goUserProfile() {

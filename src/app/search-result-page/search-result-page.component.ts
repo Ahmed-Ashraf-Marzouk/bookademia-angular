@@ -15,31 +15,32 @@ export class SearchResultPageComponent implements OnInit {
 
 
   public form: FormGroup;
-  rating3: number;
   book_specs: any;
   books: Book[] = [];
 
-  constructor(private fb: FormBuilder, private router: Router) {
-    this.rating3 = 0;
+  constructor(private fb: FormBuilder, private router: Router, private service: RemoteDatabaseServiceService) {
     this.form = this.fb.group({
       rating: ['', Validators.required],
+      rating0: [0],
       rating1: [1],
       rating2: [2],
       rating3: [3],
       rating4: [4],
-      rating5: [5]
+      rating5: [5],
+
     });
   }
 
 
   ngOnInit(): void {
     this.book_specs = [];
+    this.book_specs = this.service.getBooks();
   }
 
   goToBookResult() {
 
     this.router.navigate(['/book-result']);
-   
+
 
     // .subscribe(responseData => {
     //   console.log(responseData);
