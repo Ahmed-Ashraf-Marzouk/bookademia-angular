@@ -3,10 +3,7 @@
 
 <!-- Two seperate components to be done! -->
 
-<div class="side-bar">
-    
-</div>
-
+<app-side-bar-search-result></app-side-bar-search-result>
 
 
 
@@ -15,16 +12,15 @@
 </div>
 
 
-<mat-grid-list cols="3" rowHeight="1:2">
+<mat-grid-list cols="3"  rowHeight="1:2">
     <mat-grid-tile *ngFor='let bs of bookSpec; let i=index;'>
-        <img src="/assets/images/book-cover-1.jpeg" alt="">
+        <img src="/assets/images/book-cover-1.jpeg" alt="" (click)="goToBookResult()">
         <form class="rating" [formGroup]="form">
             <p>{{bs.name}}</p>
             <ngx-star-rating *ngIf="bs.rating == 1" formControlName="rating1" [id]=bs.id [disabled] = bs.disable></ngx-star-rating>
             <ngx-star-rating *ngIf="bs.rating == 2" formControlName="rating2" [id]=bs.id [disabled] = bs.disable></ngx-star-rating>
             <ngx-star-rating *ngIf="bs.rating == 3" formControlName="rating3" [id]=bs.id [disabled] = bs.disable></ngx-star-rating>
             <ngx-star-rating *ngIf="bs.rating == 4" formControlName="rating4" [id]=bs.id [disabled] = bs.disable></ngx-star-rating>
-
         </form>
     </mat-grid-tile>
 </mat-grid-list>

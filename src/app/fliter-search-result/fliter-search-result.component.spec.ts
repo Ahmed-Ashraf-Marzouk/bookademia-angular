@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BookcollectionComponent } from './bookcollection.component';
+import { FliterSearchResultComponent } from './fliter-search-result.component';
 
-describe('BookcollectionComponent', () => {
-  let component: BookcollectionComponent;
-  let fixture: ComponentFixture<BookcollectionComponent>;
+describe('FliterSearchResultComponent', () => {
+  let component: FliterSearchResultComponent;
+  let fixture: ComponentFixture<FliterSearchResultComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BookcollectionComponent ]
+      declarations: [ FliterSearchResultComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BookcollectionComponent);
+    fixture = TestBed.createComponent(FliterSearchResultComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

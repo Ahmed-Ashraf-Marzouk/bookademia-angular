@@ -6,6 +6,9 @@
     /* z-index: 1000; */
 }
 
+.nav-bar *{
+    z-index: 1000;
+}
 
 .nav-logo {
     margin-right: 15%;
@@ -15,7 +18,7 @@
 .nav-pages {
     margin-top: 3%;
     vertical-align: center;
-    width: 40%;
+    width: 30%;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -44,7 +47,7 @@
 }
 .nav-icons {
     margin-top:2%;
-    margin-left:5%;
+    margin-left:1.5%;
     padding: 0px;
     width:10%;
 
@@ -75,7 +78,7 @@
 }
 
 .search-box {
-    margin-left:10%;
+    margin-left:5%;
     background: #ffffff;
     height: 40px;
     border-radius: 40px;

@@ -9,9 +9,9 @@
 
 .book-name {
     font-weight: bold;
-    position: absolute;
+    position: relative;
     left: 30%;
-    top: 34%;
+    top: -46%;
     font-size: 69px;
     color: #0a5b61;
     width: 30%;
@@ -22,9 +22,9 @@
 }
 
 .book-author {
-    position: absolute;
+    position: relative;
     left: 30%;
-    top: 48.5%;
+    top: -48.5%;
     font-size: 41px;
     color: #06383b;
     width: 30%;
@@ -34,17 +34,17 @@
 }
 
 .circle-image-1 {
-    width: 6%;
-    position: absolute;
-    left: 30%;
-    top: 60%;
+  width: 6%;
+  position: relative;
+  left: 30%;
+  top: -54%;
 }
 
 .circle-image-1-data {
-    position: absolute;
-    left: 31.6%;
-    top: 62.2%;
-    color: white;
+  position: relative;
+  left: 31.6%;
+  top: -64.8%;
+  color: white;
 }
 
 .circle-image-1-data:hover {
@@ -53,19 +53,19 @@
 }
 
 .circle-image-2 {
-    border: 1px solid grey;
-    border-radius: 48px;
-    width: 6%;
-    position: absolute;
-    left: 37%;
-    top: 60%;
+  border: 1px solid grey;
+  border-radius: 48px;
+  width: 6%;
+  position: relative;
+  left: 37%;
+  top: -77%;
 }
 
 .circle-image-2-data {
-    position: absolute;
-    left: 38.1%;
-    top: 62.3%;
-    color: rgb(5, 5, 85);
+  position: relative;
+  left: 38.1%;
+  top: -87.7%;
+  color: rgb(5, 5, 85);
 }
 
 .circle-image-2-data:hover {
@@ -74,9 +74,9 @@
 }
 
 .book-description-label {
-    position: absolute;
+    position: relative;
     left: 30%;
-    top: 85%;
+    top: -76%;
     font-size: 59px;
     color: #0a5b61;
 }
@@ -85,27 +85,27 @@
     width: 51%;
     height: 234px;
     text-align: justify;
-    position: absolute;
+    position: relative;
     left: 30%;
-    top: 95%;
+    top: -73%;
     font-size: 19.5px;
     color: rgb(27, 18, 18);
     overflow: auto;
   }
 
   .author-label {
-    position: absolute;
+    position: relative;
     left: 30%;
-    top: 134%;
+    top: -68%;
     font-size: 59px;
     color: #0a5b61;
 }
 
 .author-image {
     width: 9%;
-    position: absolute;
+    position: relative;
     left: 30%;
-    top: 144%;
+    top: -65%;
     border-radius: 52%;
   }
 
@@ -113,45 +113,45 @@
     width: 51%;
     height: 182px;
     text-align: justify;
-    position: absolute;
+    position: relative;
     left: 42%;
-    top: 145%;
+    top: -91%;
     font-size: 19.5px;
     color: rgb(27, 18, 18);
     overflow: auto;
   }
 
   .recommended-label {
-    position: absolute;
-    top: 191%;
+    position: relative;
+    top: -66%;
     left: 29%;
     font-size: 59px;
     color: #0a5b61;
 }
 
 .recommended-book-1 {
-    width: 16%;
-    position: absolute;
-    left: 15%;
-    top: 208%;
-    height: 52%;
-    border-radius: 10%;
+  width: 16%;
+  position: relative;
+  left: 14%;
+  top: -56%;
+  height: 52%;
+  border-radius: 10%;
   }
 
   .recommended-book-2 {
     width: 16%;
-    position: absolute;
-    left: 40%;
-    top: 208%;
+    position: relative;
+    left: 24%;
+    top: -56%;
     height: 52%;
     border-radius: 10%;
   }
 
   .recommended-book-3 {
     width: 16%;
-    position: absolute;
-    left: 66%;
-    top: 208%;
+    position: relative;
+    left: 35%;
+    top: -56%;
     border-radius: 10%;
     height: 52%;
   }

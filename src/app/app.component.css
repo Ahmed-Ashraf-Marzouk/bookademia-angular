@@ -1,0 +1,8 @@
+app-nav-bar{
+    z-index: 2;
+}
+
+body{
+    z-index: 1;
+    overflow-x: clip;
+}

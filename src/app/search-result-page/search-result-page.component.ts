@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import {Router} from "@angular/router"
+
 
 @Component({
   selector: 'app-search-result-page',
@@ -8,7 +10,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class SearchResultPageComponent implements OnInit {
 
-
+  // database
 
   bookSpec: any[] = [
     {
@@ -21,14 +23,28 @@ export class SearchResultPageComponent implements OnInit {
 
 
     {
+
       rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
     },
-
 
     {
       rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
     },
 
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
+
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
+
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
+    {
+      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+    },
     {
       rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
     },
@@ -49,7 +65,7 @@ export class SearchResultPageComponent implements OnInit {
   public form: FormGroup;
   rating3: number;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router) {
     this.rating3 = 0;
     this.form = this.fb.group({
       rating: ['', Validators.required],
@@ -60,6 +76,13 @@ export class SearchResultPageComponent implements OnInit {
       rating5: [5]
 
     })
+  }
+
+
+  goToBookResult(){
+
+    this.router.navigate(['/book-result'])
+
   }
 
   ngOnInit(): void {

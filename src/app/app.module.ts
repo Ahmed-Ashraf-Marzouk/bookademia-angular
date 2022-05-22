@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgxStarRatingModule } from 'ngx-star-rating';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HeaderComponent } from './header/header.component';
@@ -26,8 +27,10 @@ import { TestPageComponent } from './test-page/test-page.component';
 
 import { MaterialModule } from './material/material.module';
 import { HomeNavigationComponent } from './home-navigation/home-navigation.component';
-import { BookcollectionComponent } from './bookcollection/bookcollection.component';
+import { BookCollectionComponent } from './book-collection/book-collection.component';
 import { BookDetailsHomepageComponent } from './book-details-homepage/book-details-homepage.component';
+import { SideBarSearchResultComponent } from './side-bar-search-result/side-bar-search-result.component';
+import { FliterSearchResultComponent } from './fliter-search-result/fliter-search-result.component';
 import { ArabicCollectionComponent } from './arabic-collection/arabic-collection.component';
 import { HttpClientModule } from '@angular/common/http';
 import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
@@ -49,8 +52,10 @@ import { RequestBookComponent } from './request-book/request-book.component';
     SearchResultPageComponent,
     TestPageComponent,
     HomeNavigationComponent,
-    BookcollectionComponent,
+    BookCollectionComponent,
     BookDetailsHomepageComponent,
+    SideBarSearchResultComponent,
+    FliterSearchResultComponent,
     ArabicCollectionComponent,
 
     AuthComponent,
@@ -64,10 +69,11 @@ import { RequestBookComponent } from './request-book/request-book.component';
     ReactiveFormsModule,
     FormsModule,
     NgxStarRatingModule,
+    FlexLayoutModule,
     MaterialModule,
     HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

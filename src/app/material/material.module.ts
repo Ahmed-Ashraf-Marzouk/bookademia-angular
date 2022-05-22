@@ -9,6 +9,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
+
+
 
 const MaterialComponents = [
   MatButtonModule,
@@ -23,6 +32,12 @@ const MaterialComponents = [
   MatGridListModule,
   MatSnackBarModule,
   MatBadgeModule,
+  MatSelectModule,
+  MatRadioModule,
+  MatDatepickerModule,
+  MatFormFieldModule,
+  MatNativeDateModule,
+  MatCheckboxModule,
 ];
 
 @NgModule({
