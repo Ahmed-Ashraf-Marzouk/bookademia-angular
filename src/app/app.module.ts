@@ -31,6 +31,7 @@ import { BookDetailsHomepageComponent } from './book-details-homepage/book-detai
 import { ArabicCollectionComponent } from './arabic-collection/arabic-collection.component';
 import { HttpClientModule } from '@angular/common/http';
 import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+import { RequestBookComponent } from './request-book/request-book.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
 
     AuthComponent,
     loadingSpinnerComponent,
+    RequestBookComponent,
   ],
   imports: [
     BrowserModule,
