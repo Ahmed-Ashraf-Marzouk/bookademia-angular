@@ -3,7 +3,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { catchError, tap } from 'rxjs/operators';
 import { throwError, BehaviorSubject } from 'rxjs';
-
+import { environment } from 'src/environments/environment';
 import { User } from './user.model';
 
 export interface AuthResponseData {
@@ -21,12 +21,13 @@ export class AuthService {
   user = new BehaviorSubject<User>(null!);
   private tokenExpirationTimer: any;
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router) {}
 
   signup(email: string, password: string) {
     return this.http
       .post<AuthResponseData>(
-        'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyAuMDoGOgsFHCq8V6ffYS2IqxMLv1CL6wc',
+        'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=' +
+          environment.firebaseAPIkey,
         {
           email: email,
           password: password,
@@ -49,7 +50,8 @@ export class AuthService {
   login(email: string, password: string) {
     return this.http
       .post<AuthResponseData>(
-        'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAuMDoGOgsFHCq8V6ffYS2IqxMLv1CL6wc',
+        'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=' +
+          environment.firebaseAPIkey,
         {
           email: email,
           password: password,
