@@ -1,0 +1,56 @@
+* {
+  padding-left: 10px;
+}
+body {
+  background-color: #f0ebcc;
+}
+h1 {
+  color: #3edbf0;
+}
+h2 {
+  /* text-align: center; */
+  color: #3edbf0;
+}
+h3 {
+  /* text-align: center; */
+  color: #3edbf0;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 10px;
+  width: 30%;
+  height: 10px;
+}
+hr.style1 {
+  background-color: black;
+  height: 2px;
+  border-style: none;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr.style2 {
+  border-style: none;
+  background-color: black;
+  height: 2px;
+  width: 30%;
+}
+
+/* the dots should be grey but they are black! */
+hr.style3 {
+  border-color: grey;
+  border-style: none;
+  border-bottom: dotted;
+  border-width: 10px;
+  width: 10%;
+  height: 0px;
+}
+
+img {
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
