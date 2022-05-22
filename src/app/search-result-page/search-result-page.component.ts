@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import {Router} from "@angular/router"
+import { Router } from "@angular/router"
+import { Book } from '../book-template';
+import { RemoteDatabaseServiceService } from '../remote-database-service.service';
+
 
 
 @Component({
@@ -10,60 +13,11 @@ import {Router} from "@angular/router"
 })
 export class SearchResultPageComponent implements OnInit {
 
-  // database
 
-  bookSpec: any[] = [
-    {
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-
-    {
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-
-
-    {
-
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-
-    {
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-
-    {
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-
-    {
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-
-    {
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-    {
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-    {
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-
-    {
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-
-    {
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-    {
-      rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
-    },
-
-
-  ];
   public form: FormGroup;
   rating3: number;
+  book_specs: any;
+  books: Book[] = [];
 
   constructor(private fb: FormBuilder, private router: Router) {
     this.rating3 = 0;
@@ -74,18 +28,79 @@ export class SearchResultPageComponent implements OnInit {
       rating3: [3],
       rating4: [4],
       rating5: [5]
-
-    })
+    });
   }
 
-
-  goToBookResult(){
-
-    this.router.navigate(['/book-result'])
-
-  }
 
   ngOnInit(): void {
+    this.book_specs = [];
   }
 
+  goToBookResult() {
+
+    this.router.navigate(['/book-result']);
+   
+
+    // .subscribe(responseData => {
+    //   console.log(responseData);
+    //   this.books.push(responseData);
+    // });
+
+  }
+
+  search() {
+  }
+
+
 }
+
+
+  // // database
+
+  // bookSpec: any[] = [
+  //   {
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },
+
+  //   {
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },
+
+
+  //   {
+
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },
+
+  //   {
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },
+
+  //   {
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },
+
+  //   {
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },
+
+  //   {
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },
+  //   {
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },
+  //   {
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },
+
+  //   {
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },
+
+  //   {
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },
+  //   {
+  //     rating: 1, name: 'Computer Networks 3rd edition', id: "'rating1'", disabled: false, author: 'Ashraf'
+  //   },

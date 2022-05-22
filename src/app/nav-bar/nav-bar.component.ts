@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Book } from '../book-template';
+import { RemoteDatabaseServiceService } from '../remote-database-service.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,9 +9,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private service: RemoteDatabaseServiceService) { }
 
-  ngOnInit(): void {}
+  book_specs: Book[] = [];
+  ngOnInit(): void { }
 
   goToWishlist(): void {
     this.router.navigate(['wishlist']);
@@ -21,5 +24,9 @@ export class NavBarComponent implements OnInit {
 
   goSearchResult() {
     this.router.navigate(['search-result']);
+    this.service.getBooks().subscribe((responseData: any) => {
+      console.log(responseData);
+      this.book_specs = responseData
+    });
   }
 }
