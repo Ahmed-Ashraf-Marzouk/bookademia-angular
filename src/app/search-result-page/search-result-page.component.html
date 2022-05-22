@@ -13,7 +13,7 @@
 
 
 <mat-grid-list cols="3"  rowHeight="1:2">
-    <mat-grid-tile *ngFor='let bs of bookSpec; let i=index;'>
+    <mat-grid-tile *ngFor='let bs of book_specs; let i=index;'>
         <img src="/assets/images/book-cover-1.jpeg" alt="" (click)="goToBookResult()">
         <form class="rating" [formGroup]="form">
             <p>{{bs.name}}</p>

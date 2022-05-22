@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgxStarRatingModule } from 'ngx-star-rating';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HeaderComponent } from './header/header.component';
@@ -34,6 +35,7 @@ import { ArabicCollectionComponent } from './arabic-collection/arabic-collection
 import { HttpClientModule } from '@angular/common/http';
 import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { RequestBookComponent } from './request-book/request-book.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +62,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     AuthComponent,
     loadingSpinnerComponent,
     UserProfileComponent,
+    RequestBookComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,6 +71,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     ReactiveFormsModule,
     FormsModule,
     NgxStarRatingModule,
+    FlexLayoutModule,
     MaterialModule,
     HttpClientModule,
   ],
